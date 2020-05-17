@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{125AD249-E570-4253-8F3C-0C5883816744}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLDiemSVV2</RootNamespace>
+    <AssemblyName>QLDiemSVV2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\BangDiem.cs" />
+    <Compile Include="DTO\HocKy.cs" />
+    <Compile Include="DTO\Lop.cs" />
+    <Compile Include="DTO\MonHoc.cs" />
+    <Compile Include="DTO\Quyen.cs" />
+    <Compile Include="DTO\SinhVien.cs" />
+    <Compile Include="DTO\TaiKhoan.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDoiMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDoiMK.Designer.cs">
+      <DependentUpon>FormDoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHocKy.Designer.cs">
+      <DependentUpon>FormHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLop.Designer.cs">
+      <DependentUpon>FormLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonHoc.Designer.cs">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormQLDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQLDiem.Designer.cs">
+      <DependentUpon>FormQLDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSinhVien.Designer.cs">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormĐN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormĐN.Designer.cs">
+      <DependentUpon>FormĐN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLD.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLD.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDiemSvV2DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDiemSvV2DataSet6.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDoiMK.resx">
+      <DependentUpon>FormDoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHocKy.resx">
+      <DependentUpon>FormHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLop.resx">
+      <DependentUpon>FormLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonHoc.resx">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQLDiem.resx">
+      <DependentUpon>FormQLDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSinhVien.resx">
+      <DependentUpon>FormSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormĐN.resx">
+      <DependentUpon>FormĐN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLD.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>QLD.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLD.dbml.layout">
+      <DependentUpon>QLD.dbml</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet.xsc">
+      <DependentUpon>QLDiemSvV2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet.xss">
+      <DependentUpon>QLDiemSvV2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet1.xsc">
+      <DependentUpon>QLDiemSvV2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet1.xss">
+      <DependentUpon>QLDiemSvV2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet2.xsc">
+      <DependentUpon>QLDiemSvV2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet2.xss">
+      <DependentUpon>QLDiemSvV2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet3.xsc">
+      <DependentUpon>QLDiemSvV2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet3.xss">
+      <DependentUpon>QLDiemSvV2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet4.xsc">
+      <DependentUpon>QLDiemSvV2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet4.xss">
+      <DependentUpon>QLDiemSvV2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet5.xsc">
+      <DependentUpon>QLDiemSvV2DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet5.xss">
+      <DependentUpon>QLDiemSvV2DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet6.xsc">
+      <DependentUpon>QLDiemSvV2DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLDiemSvV2DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDiemSvV2DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDiemSvV2DataSet6.xss">
+      <DependentUpon>QLDiemSvV2DataSet6.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

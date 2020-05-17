@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.25" name="QLD">
+  <DataContextMoniker Name="/QLDDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fb5ed635-bc98-423d-a48c-2258350e1202" absoluteBounds="6.25, 0.875, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/QLDDataContext/BangDiem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9eeda66b-c402-4424-ad69-f9ec309ea29e" absoluteBounds="6.265, 1.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ad803b5-de14-4f69-928f-e2790a1fd752" absoluteBounds="3.5, 4.625, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/QLDDataContext/HocKy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="77020027-d4e6-443a-b432-785fcce0c221" absoluteBounds="3.515, 5.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fc4f7a27-7441-42ac-950f-6694b19320d2" absoluteBounds="0.75, 1.625, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/QLDDataContext/Lop" />
+      <nestedChildShapes>
+        <elementListCompartment Id="43e98929-91bd-456c-87ed-7728d59a0eed" absoluteBounds="0.765, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff3993fa-d77c-4988-91ce-2744439672ef" absoluteBounds="3.5, 7.625, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/QLDDataContext/MonHoc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6076caa4-ac3f-4f23-bc0d-2f13994780bb" absoluteBounds="3.515, 8.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="28c9abaf-b6ee-456a-b9fc-918be3a03e0f" absoluteBounds="3.5, 1.375, 2, 1.9631982421875003">
+      <DataClassMoniker Name="/QLDDataContext/SinhVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3bfc32fd-62ff-4959-96d2-4700e4d7e665" absoluteBounds="3.515, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.22199625651042); (6.63541416666667 : 5.22199625651042 : JumpStart); (6.80208083333333 : 5.22199625651042 : JumpEnd); (7.25 : 5.22199625651042); (7.25 : 3.79970540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLDDataContext/HocKy/HocKy_BangDiem" />
+      <nodes>
+        <classShapeMoniker Id="2ad803b5-de14-4f69-928f-e2790a1fd752" />
+        <classShapeMoniker Id="fb5ed635-bc98-423d-a48c-2258350e1202" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.31814697265625); (6.7187475 : 8.31814697265625); (6.7187475 : 3.79970540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLDDataContext/MonHoc/MonHoc_BangDiem" />
+      <nodes>
+        <classShapeMoniker Id="ff3993fa-d77c-4988-91ce-2744439672ef" />
+        <classShapeMoniker Id="fb5ed635-bc98-423d-a48c-2258350e1202" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.35659912109375); (6.25 : 2.35659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLDDataContext/SinhVien/SinhVien_BangDiem" />
+      <nodes>
+        <classShapeMoniker Id="28c9abaf-b6ee-456a-b9fc-918be3a03e0f" />
+        <classShapeMoniker Id="fb5ed635-bc98-423d-a48c-2258350e1202" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.31814697265625); (3.5 : 2.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLDDataContext/Lop/Lop_SinhVien" />
+      <nodes>
+        <classShapeMoniker Id="fc4f7a27-7441-42ac-950f-6694b19320d2" />
+        <classShapeMoniker Id="28c9abaf-b6ee-456a-b9fc-918be3a03e0f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
